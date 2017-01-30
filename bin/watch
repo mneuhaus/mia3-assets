@@ -1,0 +1,6 @@
+#!/bin/sh
+
+yarn install
+./node_modules/.bin/stylus --watch --sourcemap --include-css Styles/Main.styl --out Styles/Main.css &
+./node_modules/.bin/webpack --watch &
+wait
